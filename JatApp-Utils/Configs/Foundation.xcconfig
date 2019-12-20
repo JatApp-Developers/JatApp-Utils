@@ -1,0 +1,40 @@
+//
+//  Foundation.xcconfig
+//  JatApp-Utils
+//
+//  Created by Developer on 4/4/19.
+//  Copyright © 2019 JatApp. All rights reserved.
+//
+
+SUPPORTED_PLATFORMS = macosx iphonesimulator iphoneos
+
+IPHONEOS_DEPLOYMENT_TARGET = 10.0
+MACOSX_DEPLOYMENT_TARGET = 10.11
+
+//iphonesimulator
+VALID_ARCHS[sdk=iphonesimulator*] = i386 x86_64
+TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*] = 1,2
+ENABLE_BITCODE[sdk=iphonesimulator*] = YES
+
+//iphoneos
+VALID_ARCHS[sdk=iphoneos*] = arm64 armv7 armv7s
+TARGETED_DEVICE_FAMILY[sdk=iphoneos*] = 1,2
+ENABLE_BITCODE[sdk=iphoneos*] = YES
+
+//macosx
+VALID_ARCHS[sdk=macosx*] = i386 x86_64
+FRAMEWORK_VERSION[sdk=macosx*] = A
+ENABLE_BITCODE[sdk=macosx*] = NO
+
+APPLICATION_EXTENSION_API_ONLY = YES
+PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX).foundation
+INFOPLIST_FILE = $(SRCROOT)/Foundation/Resources/Info.plist
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+PRODUCT_NAME = JatAppFoundation
+
+CODE_SIGN_IDENTITY =
+CODE_SIGN_STYLE =
+
+DEFINES_MODULE = YES
+CLANG_ENABLE_MODULES = YES
+

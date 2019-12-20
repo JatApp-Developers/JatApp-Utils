@@ -1,0 +1,13 @@
+//
+//  Release.xcconfig
+//  JatApp-Utils
+//
+//  Created by Developer on 1/24/19.
+//  Copyright © 2019 JatApp. All rights reserved.
+//
+
+#include "Common.xcconfig"
+
+SWIFT_COMPILATION_MODE = wholemodule
+SWIFT_OPTIMIZATION_LEVEL = -O
+VALIDATE_PRODUCT = YES;

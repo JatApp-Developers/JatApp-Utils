@@ -1,0 +1,21 @@
+//
+//  iOS.xcconfig
+//  JatApp-Utils
+//
+//  Created by Developer on 1/24/19.
+//  Copyright © 2019 JatApp. All rights reserved.
+//
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX).ios.utils
+INFOPLIST_FILE = $(SRCROOT)/iOS/Resources/Info.plist
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+PRODUCT_NAME = JatAppUtils
+
+CODE_SIGN_STYLE =
+CODE_SIGN_IDENTITY = 
+
+TARGETED_DEVICE_FAMILY = 1,2
+IPHONEOS_DEPLOYMENT_TARGET = 10.0
+SDKROOT = iphoneos
+DEFINES_MODULE = YES
+

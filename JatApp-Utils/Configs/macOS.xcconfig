@@ -1,0 +1,23 @@
+//
+//  macOS.xcconfig
+//  JatApp-Utils
+//
+//  Created by Developer on 1/24/19.
+//  Copyright © 2019 JatApp. All rights reserved.
+//
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX).macos.utils
+INFOPLIST_FILE = $(SRCROOT)/macOS/Resources/Info.plist
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+PRODUCT_NAME = JatAppUtils
+
+CODE_SIGN_IDENTITY =
+CODE_SIGN_STYLE =
+
+COMBINE_HIDPI_IMAGES = YES
+FRAMEWORK_VERSION = A
+MACOSX_DEPLOYMENT_TARGET = 10.11
+SDKROOT = macosx
+DEFINES_MODULE = YES
+CLANG_ENABLE_MODULES = YES
+
